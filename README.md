@@ -106,19 +106,19 @@ docker run -itd --name mw-server --privileged=true -p 7200:7200 -p 80:80 -p 443:
 - 初始安装
 
 ```
-curl -fsSL https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/install.sh | bash
 ```
 
 - 直接更新
 
 ```
-curl -fsSL https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/update.sh | bash
+curl -fsSL https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/update.sh | bash
 ```
 
 - 卸载脚本
 
 ```
-wget -O uninstall.sh https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/uninstall.sh && bash uninstall.sh
+wget -O uninstall.sh https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/uninstall.sh && bash uninstall.sh
 ```
 
 ### 备用地址
@@ -126,20 +126,20 @@ wget -O uninstall.sh https://raw.githubusercontent.com/hicasper/mdserver/master/
 - 初始安装
 
 ```
-curl -fsSL  https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/install.sh | bash
+curl -fsSL  https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/install.sh | bash
 
 ```
 
 - 直接更新
 
 ```
-curl -fsSL  https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/update.sh | bash
+curl -fsSL  https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/update.sh | bash
 ```
 
 - 卸载脚本
 
 ```
-wget -O uninstall.sh https://raw.githubusercontent.com/hicasper/mdserver/master/scripts/uninstall.sh && bash uninstall.sh
+wget -O uninstall.sh https://raw.githubusercontent.com/hicasper/mdserver-web/master/scripts/uninstall.sh && bash uninstall.sh
 ```
 
 
