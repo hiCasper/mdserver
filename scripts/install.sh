@@ -18,7 +18,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-
+{
 
 if [ ${_os} == "Darwin" ]; then
 	OSNAME='macos'
@@ -132,3 +132,4 @@ endTime=`date +%s`
 ((outTime=(${endTime}-${startTime})/60))
 echo -e "Time consumed:\033[32m $outTime \033[0mMinute!"
 
+} 1> >(tee mw-install.log) 2>&1
