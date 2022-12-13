@@ -13,10 +13,6 @@ fi
 VERSION_ID=`cat /etc/*-release | grep VERSION_ID | awk -F = '{print $2}' | awk -F "\"" '{print $2}'`
 
 cn=$(curl -fsSL -m 10 http://ipinfo.io/json | grep "\"country\": \"CN\"")
-NTPHOST='time.nist.gov'
-if [ ! -z "$cn" ];then
-    NTPHOST='ntp1.aliyun.com'
-fi
 
 ln -sf /bin/bash /bin/sh
 
@@ -29,6 +25,10 @@ fi
 
 # synchronize time first
 apt-get install ntpdate -y
+NTPHOST='time.nist.gov'
+if [ ! -z "$cn" ];then
+    NTPHOST='ntp1.aliyun.com'
+fi
 ntpdate $NTPHOST | logger -t NTP
 
 if [ ! -f /usr/sbin/locale-gen ];then
